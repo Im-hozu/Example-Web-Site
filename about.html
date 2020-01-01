@@ -10,13 +10,14 @@
     <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!--Slider-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!--MomentJS-->
-    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <!--JQuery UI-->
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
     <!--Mis scripts-->
     <script type="text/javascript" src="js/main.js"></script>
+    
 </head>
 <body>
     <div id="selector-theme">
@@ -41,16 +42,19 @@
                 </ul>
             </nav>
         </header>
-        <!--SLIDER-->
-        <div id="slider">
-                <div><img src="img/hojas.jpg" title="Hojas"></div>
-                <div><img src="img/rojo.jpg" title="Rojo"></div>
-                <div><img src="img/cielo.jpg" title="Cielo"></div>
-        </div>
         <!--CONTENIDO-->
         <section id="content">
-            <div id="posts">
-                <!--Cargar posts desde un JSON/Loading posts from a JSON File-->
+            <div id="box">
+                <!--Cargar acordeon-->
+                <h2>Sobre mí</h2>
+                <div id="acordeon">
+                    <h3>¿Quienes somos?</h3>
+                    <p>Maecenas elementum tincidunt est, quis fermentum urna hendrerit quis. Cras aliquet at dolor eget aliquet. Nunc pulvinar vestibulum turpis, sed pretium ipsum blandit eu. Nulla facilisi. Quisque nec purus porttitor, laoreet felis quis, consectetur ligula. Ut elementum quis augue nec elementum. Nullam eu purus ut elit ultrices facilisis eget a massa. Maecenas accumsan diam vitae ullamcorper consectetur. Nulla facilisi.</p>
+                    <h3>Servicios</h3>
+                    <p>Maecenas elementum tincidunt est, quis fermentum urna hendrerit quis. Cras aliquet at dolor eget aliquet. Nunc pulvinar vestibulum turpis, sed pretium ipsum blandit eu. Nulla facilisi. Quisque nec purus porttitor, laoreet felis quis, consectetur ligula. Ut elementum quis augue nec elementum. Nullam eu purus ut elit ultrices facilisis eget a massa. Maecenas accumsan diam vitae ullamcorper consectetur. Nulla facilisi.</p>
+                    <h3>Clientes</h3>
+                    <p>Maecenas elementum tincidunt est, quis fermentum urna hendrerit quis. Cras aliquet at dolor eget aliquet. Nunc pulvinar vestibulum turpis, sed pretium ipsum blandit eu. Nulla facilisi. Quisque nec purus porttitor, laoreet felis quis, consectetur ligula. Ut elementum quis augue nec elementum. Nullam eu purus ut elit ultrices facilisis eget a massa. Maecenas accumsan diam vitae ullamcorper consectetur. Nulla facilisi.</p>
+                </div>
             </div>
             <aside id="sidebar">
                 <div id="about">
