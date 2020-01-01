@@ -7,8 +7,14 @@
     <title>Proyecto con Javascript</title>
     <!-- Estilos css-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-    <!--Código Javascript-->
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--MomentJS-->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <!--Mis scripts-->
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
@@ -31,23 +37,14 @@
         </header>
         <!--SLIDER-->
         <div id="slider">
-
+                <div><img src="img/hojas.jpg" title="Hojas"></div>
+                <div><img src="img/rojo.jpg" title="Rojo"></div>
+                <div><img src="img/cielo.jpg" title="Cielo"></div>
         </div>
         <!--CONTENIDO-->
         <section id="content">
             <div id="posts">
-                <article class="post">
-                    <h2>Prueba de titulo</h2>
-                    <span class="date">Fecha de publicación</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat, nunc quis pulvinar consequat, turpis sapien aliquet neque, in euismod neque orci in enim. Sed sollicitudin tellus sed erat maximus, ac pretium felis efficitur. Suspendisse nec leo vestibulum est semper pulvinar. Vivamus vestibulum quam eu mollis finibus. Cras id turpis scelerisque, tincidunt odio et, ullamcorper mi. Maecenas quis varius lacus. Ut ornare massa pellentesque dui egestas, quis pharetra sem varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu massa pharetra, tempor velit vitae, venenatis nisi. Duis consequat sem id ante ornare, quis maximus leo hendrerit.</p>
-                    <a href="#" class="boton-mas">Leer más</a>
-                </article>
-                <article class="post">
-                    <h2>Prueba de titulo</h2>
-                    <span class="date">Fecha de publicación</span>
-                    <p>Suspendisse viverra fermentum tortor, non lobortis lorem consequat vitae. In hac habitasse platea dictumst. Praesent hendrerit vel mauris non viverra. Vivamus in ullamcorper justo. Nam maximus maximus est quis tristique. Donec risus dui, hendrerit non maximus accumsan, lacinia id urna. Cras vestibulum dolor eu venenatis cursus. Aliquam sem odio, tincidunt vel nulla vitae, porta porta diam. Phasellus scelerisque suscipit leo, eu venenatis ex aliquet quis. Ut at placerat est. Fusce ante ex, faucibus sit amet lorem non, fermentum tristique lacus. Ut vitae porttitor lorem. Nulla consectetur, ex a lacinia scelerisque, sapien libero pulvinar justo, consequat varius turpis diam a mi. Proin tincidunt libero nec imperdiet ullamcorper. Nunc orci felis, viverra ut tempor eu, porta id enim.</p>
-                    <a href="#" class="boton-mas">Leer más</a>
-                </article>
+                <!--Cargar posts desde un JSON/Loading posts from a JSON File-->
             </div>
             <aside id="sidebar">
                 <div id="about">
