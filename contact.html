@@ -10,13 +10,16 @@
     <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!--Slider-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!--MomentJS-->
-    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <!--JQuery UI-->
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+    <!--Plugin validación-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <!--Mis scripts-->
     <script type="text/javascript" src="js/main.js"></script>
+    
 </head>
 <body>
     <div id="selector-theme">
@@ -41,16 +44,29 @@
                 </ul>
             </nav>
         </header>
-        <!--SLIDER-->
-        <div id="slider">
-                <div><img src="img/hojas.jpg" title="Hojas"></div>
-                <div><img src="img/rojo.jpg" title="Rojo"></div>
-                <div><img src="img/cielo.jpg" title="Cielo"></div>
-        </div>
         <!--CONTENIDO-->
         <section id="content">
-            <div id="posts">
-                <!--Cargar posts desde un JSON/Loading posts from a JSON File-->
+            <div id="box">
+                <!--Cargar formulario de contacto-->
+                <h2>Contacto</h2>
+                <form action="" method="POST" id="form_contact">
+                    <label for="name">Nombre</label>
+                    <input data-validation="alphanumeric" type="text" name="name"/>
+                    <label for="surname">Apellidos</label>
+                    <input data-validation="alphanumeric" type="text" name="surname"/>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" data-validation="email"/>
+                    <label for="sex">Sexo</label>
+                    <select name="sex" data-validation="required">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+                    <label for="date">Fecha de nacimiento</label>
+                    <input type="text" name="date" data-validation="date" data-validation-format="dd/mm/yyyy"/>
+                    <label for="years">Edad</label>
+                    <input type="number" name="years" data-validation="number"/>
+                    <input type="submit" value="Enviar"/>
+                </form>
             </div>
             <aside id="sidebar">
                 <div id="about">
