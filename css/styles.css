@@ -96,7 +96,7 @@ h2{
 
 #sidebar{
     font-family: Helvetica,Arial;
-    width: 31%;
+    width: 27%;
     float: right;
 }
 
@@ -239,4 +239,30 @@ footer{
     color: white;
     padding:10px;
     width: 55%;
+}
+
+div#tablero{
+    background: #0096D8;
+    border: #333 10px solid;
+    width: 107%;
+    height: 535px;
+    padding: 24px;
+    margin: 2em auto;
+}
+
+div#tablero>div{
+    background-color: #eee;
+    background-image: url(../img/icon.png);
+    background-size: cover;
+    border: #000 10px solid;
+    width: 71px;
+    height: 71px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    font-size: 60px;
+    font-weight: bold;
+    cursor:pointer;
+    text-align:center;
+
 }

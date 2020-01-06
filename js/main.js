@@ -1,5 +1,20 @@
 $(document).ready(function(){
 
+    var css = localStorage.getItem("color");
+    if(css != null && css != "undefined"){
+        var theme = $('#theme');
+        switch(css){
+            case "green":
+                theme.attr('href','css/green.css');
+                break;
+            case "blue":
+                theme.attr('href','css/blue.css');
+                break;
+            case "red":
+                theme.attr('href','css/red.css');
+        }
+    }
+
     //Slider
     if(window.location.href.indexOf('index') > -1){
     $('#slider').bxSlider({
@@ -50,12 +65,15 @@ $(document).ready(function(){
     var theme = $('#theme');
     $('#to-green').click(function(){
         theme.attr('href','css/green.css');
+        localStorage.setItem("color","green");
     });
     $('#to-blue').click(function(){
         theme.attr('href','css/blue.css');
+        localStorage.setItem("color","blue");
     });
     $('#to-red').click(function(){
         theme.attr('href','css/red.css');
+        localStorage.setItem("color","red");
     });
 
     //Scroll arriba de la web - Scroll to web top
@@ -117,6 +135,28 @@ $(document).ready(function(){
         });
     }
     
+    //Juego
+    if(window.location.href.indexOf('game') > -1){
+       
+        var juego = new Juego();
+        juego.generarTablero();
+
+        for(var i = 0;i < 24; i++){
+            $("#carta"+i).click(function(){
+                juego.girarCarta(this);
+            })
+        }
+
+        $("#restaurar").click(function(){
+            juego.generarTablero();
+            for(var i = 0;i < 24; i++){
+                $("#carta"+i).click(function(){
+                    juego.girarCarta(this);
+                })
+            }
+        })
+        
+    }
     
 
 
